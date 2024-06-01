@@ -1,0 +1,1 @@
+This folder contains PDF documents user wants to include to some other .tex document

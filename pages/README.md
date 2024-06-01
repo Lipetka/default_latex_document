@@ -1,0 +1,1 @@
+This folder contains other .tex documents, more sub-folders can be created.

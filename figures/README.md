@@ -1,0 +1,1 @@
+This folder contains figures that are used in .tex documents

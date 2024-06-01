@@ -1,0 +1,45 @@
+\documentclass[12pt, openany]{book}
+\usepackage{afterpage}
+\usepackage{graphicx} % for including graphics
+\usepackage[margin=3cm]{geometry} % set margin to 0pt
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{titlesec} % allows title formating
+\usepackage{pdfpages}
+\usepackage{xifthen}
+\usepackage[hidelinks]{hyperref} % for automatic hyperlinks without red squares
+\usepackage{minted} % for code highlighting
+\usepackage{caption}
+
+% Choose language here
+\usepackage[slovak]{babel} % for Slovak language support
+
+% Caption setup
+\captionsetup[figure]{skip=4mm}
+\captionsetup[table]{skip=4mm}
+\captionsetup[listing]{name=Zdrojový kód} % Setup listings for source codes manually
+\renewcommand\listoflistingscaption{Zoznam zdrojových kódov}
+
+% Title formats (The way i like them)
+\titleformat{\chapter}[display]{\Huge\bfseries}{}{0pt}{\Huge\bfseries}
+\titlespacing*{\chapter}{0cm}{0cm}{1.5cm} % {command}{left}{before}{after}
+\setlength{\parskip}{0pt} % changes vertical space between paragraphs
+\setlength{\headheight}{16pt}
+
+\begin{document}
+
+    \input{pages/title_page.tex}
+    \tableofcontents
+
+    % Other pages
+    \input{pages/another_tex_doc.tex}
+    % ...
+
+    \newpage
+    \listoflistings
+    \listoffigures
+    \listoftables
+
+    \input{pages/bibliography.tex}
+\end{document}
